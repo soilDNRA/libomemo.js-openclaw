@@ -39,6 +39,11 @@ const FLAGS = [
     "MODULARIZE=1",
     "-s",
     "EXPORT_NAME=Curve25519Module",
+    // Modern Emscripten no longer exposes typed heap views on the module
+    // object unless they are explicitly exported. src/curve.ts uses HEAPU8
+    // for every native input/output buffer.
+    "-s",
+    "EXPORTED_RUNTIME_METHODS=['HEAPU8']",
     // Embed the wasm as an in-JS base64 data URI instead of emitting a sibling
     // .wasm file. The generated module then decodes it in-JS with no path
     // resolution and no filesystem/fetch access, so it loads identically in

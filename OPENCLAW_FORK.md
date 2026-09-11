@@ -1,5 +1,10 @@
 # OpenClaw reproducible-build fork
 
+Canonical source: <https://github.com/soilDNRA/libomemo.js-openclaw>
+
+The maintained release is the annotated tag `v3.0.0-openclaw.1`. Consumers
+must pin its peeled commit rather than a branch or moving tag name.
+
 This branch starts from the signed upstream `v3.0.0` source commit
 `d5ba2a36abaa57662c27ac1c27c79cc1c3a8ada9`.
 

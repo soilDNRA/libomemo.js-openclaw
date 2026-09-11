@@ -54,7 +54,7 @@
         "@typescript-eslint/eslint-plugin": "^8.59.3",
         "@typescript-eslint/parser": "^8.59.3",
         "@vitest/browser": "^4.1.7",
-        "@vitest/browser-playwright": "^4.1.7",
+        "@vitest/browser-playwright": "^5.0.0",
         "chai": "^6.2.2",
         "esbuild": "^0.28.0",
         "eslint": "^9.0.0",
